@@ -1,0 +1,329 @@
+
+body{
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+header{
+    text-align: center;
+    background-color: beige;
+    border-radius: 15px;
+}
+nav ul {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+
+header>h1
+{
+    color: #007cc2;
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+nav>ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+nav>ul>li{
+    flex-grow: 1;
+}
+nav>ul>li>a:hover{
+    background-color: lightcoral;
+}
+img{
+    width: 100%;
+}
+h2, h1, h3{
+  text-align: center ;
+}
+
+.pie {
+    background-color: #27463D;
+    margin: 1000px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+  }
+
+p{
+    margin-top:0; margin-bottom:0;
+}
+p{
+  text-align: justify;
+}
+
+/* Secciones */
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Estilos para botones */
+
+button:hover {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button{
+  background-color: #333;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+}
+
+
+/* Estilos para productos */
+
+.producto {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+}
+
+.producto p{
+  text-align: center;
+}
+
+.producto img {
+  width: 200px;
+  height: 200px;
+}
+
+
+.precio {
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  padding: 12px;
+}
+.carrito {
+  float:right;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 250px;
+
+  
+}
+
+#carrito-lista {
+  list-style: none;
+  padding: 0;
+  list-style-type: none;
+  margin: 20px;
+  
+  
+}
+
+#carrito-lista li {
+  margin: 5px 0;
+  margin-bottom: 10px;
+}
+
+#total {
+  font-weight: bold;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  
+  
+}
+
+.conta{
+  margin: 7px auto;
+  width: 800px;
+  text-align: justify;
+  padding: 20px;
+  
+}
+
+
+#mensaje, #comment{
+  width: 400px;
+}
+#comment{
+  height: 50px;
+}
+#correo {
+  height: 20px;
+  width: 400px;
+}
+.txt{
+  font-size: 30px;
+  text-align: center;
+}
+
+
+#inicio p{
+  text-align: center;
+  margin-top: 0px;
+}
+#pie{
+  margin-top: 400px !important;
+}
+footer p{
+  text-align: center;
+}
+
+.containeros{
+  display: flex;
+  margin: 7px auto;
+  width: 800px;
+  text-align: justify;
+  padding: 20px;
+}
+
+.col-sm-6{
+  padding: 20px;
+  width: 500px;
+  text-align: justify;
+}
+.col-sm-7{
+  padding: 20px;
+  width: 600px;
+  text-align: left;
+  
+}
+.list-group-item>a{
+  color: black;
+  text-align: left;
+}
+.list-group-item{
+  background-color:cadetblue;
+  list-style-type: none;
+  padding: 10px;
+  width: 390px;
+  border: 1px groove ;
+}
+body{
+  background-color: white;
+}
+
+
+
+/*** 6.0 - MediaQueries Tableta ***/
+@media (max-width: 800px) {
+    .pie {
+      background: rgb(206, 22, 20); /*Aqui hacemos cambio de color */
+      text-align: center;
+    }
+    img {
+      width: 100%;
+    }
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+  }
+  
+/*** 6.0 - MediaQueries Tableta ***/
+
+/*** 7.0 - MediaQueries Smarthphone  ***/
+@media (max-width: 600px) {
+
+    .pie {
+      background: rgb(205, 92, 92); 
+      text-align: center;
+    }
+    img {
+      width: 100%;
+    }
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    #mensaje, #comment{
+      width: 290px;
+    }
+    #comment{
+      height: 50px;
+    }
+    #correo {
+      height: 20px;
+      width: 290px;
+    }
+    .txt{
+      text-align: left;
+    }
+    .containeros{
+      display: block;
+    }
+    h2{
+      text-align: left;
+    }
+    thead{
+      text-align: center;
+    }
+    .containeros{
+      display: block;
+    }
+    h2{
+      text-align: left;
+    }
+    thead{
+      text-align: center;
+    }
+    .col-sm-6 p{
+      font-size: 7px;
+      margin-bottom: 0px;
+      
+    }
+    .col-sm-6 h2{
+      font-size: 17px;
+      margin-bottom: 0px;
+      
+    }
+    
+  .col-sm-7 h2{
+    font-size: 17px;
+    margin-bottom: 17px;
+    padding-left: 50px;
+    text-align:justify;
+   
+
+  }
+  .col-sm-7 ul {
+    font-size: 10px;
+  }
+  .list-group-item{
+    width: 200px;
+  }
+  header>h1
+
+  {
+    color: #007cc2;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+  /*** 7.0 - MediaQueries Smarthphone  ***/
+  
+

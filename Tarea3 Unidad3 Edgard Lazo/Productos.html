@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+            <img src="img/banner.png" width="100%" height="50%" alt="">
+        <h1>Nuestros Productos</h1>
+    </header>
+    
+    <nav>
+        <ul>
+        <li> <a href="index.html">  Inicio  </a>   </li>
+        <li> <a href="Sobre-Nosotros.html">  Sobre Nosotros </a> </li>
+        <li> <a href="Productos.html"> Productos</a> </li>
+        <li> <a href="contáctanos.html">Contáctenos</a> </li>
+        <li> <a href="sucursales.html">  Sucursales   </a> </li>
+        </ul>
+    </nav>
+    <section id="inicio">
+        <h2>Bienvenido a nuestra tienda en línea</h2>
+        <p >Encuentra los mejores productos a los mejores precios.</p>
+    </section>
+    <!-- Lista de productos -->
+
+    <section id="productos">
+        <h2>Nuestros productos</h2>
+        <div class="producto">
+            <img src="https://caterpillargt.com/cdn/shop/files/30066773_180x.jpg?v=1687527958" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>Camisa convertible</p>
+            <p class="precio">$50.00</p>
+            <button onclick="agregarAlCarrito('Producto 1', 50.00)">Comprar</button>
+           
+        </div>
+        <div class="producto">
+            <img src="https://caterpillargt.com/cdn/shop/files/30066795_180x.jpg?v=1687528332" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>Camisa polo Jersey</p>
+            <p class="precio">$35.00</p>
+            <button onclick="agregarAlCarrito('Producto 2', 35.00)">Comprar</button>
+        </div>
+        <div class="producto">
+            <img src="https://caterpillargt.com/cdn/shop/products/30070941_180x.jpg?v=1679624389" alt="Producto 2">
+            <h3>Producto 3</h3>
+            <p>CAMISA JACQUARD</p>
+            <p class="precio">$40.00</p>
+            <button onclick="agregarAlCarrito('Producto 3', 40.00)">Comprar</button>
+        </div>
+        <div class="producto">
+            <img src="https://caterpillargt.com/cdn/shop/products/30070995_180x.jpg?v=1679624812" alt="Producto 2">
+            <h3>Producto 4</h3>
+            <p>Camisa polo Jerse</p>
+            <p class="precio">$42.00</p>
+            <button onclick="agregarAlCarrito('Producto 4', 42.00)">Comprar</button>
+         
+        </div>
+        <div class="producto">
+            <img src="https://caterpillargt.com/cdn/shop/files/30072491_180x.jpg?v=1684250616" alt="Producto 2">
+            <h3>Producto 5</h3>
+            <p>Camisa buttom pollar</p>
+            <p class="precio">$41.00</p>
+            <button onclick="agregarAlCarrito('Producto 5', 41.00)">Comprar</button>
+            
+        </div>
+        <div class="producto">
+            <img src="https://caterpillargt.com/cdn/shop/files/30066777_180x.jpg?v=1685123735" alt="Producto 2">
+            <h3>Producto 6</h3>
+            <p>Camisa sleve</p>
+            <p class="precio">$33.00</p>
+            <button onclick="agregarAlCarrito('Producto 6', 33.00)">Comprar</button>
+            
+        </div>
+        <div class="producto">
+            <img src="https://caterpillargt.com/cdn/shop/products/30070923_180x.jpg?v=1679622600" alt="Producto 2">
+            <h3>Producto 7</h3>
+            <p>Camisa sleve</p>
+            <p class="precio">$22.00</p>
+            <button onclick="agregarAlCarrito('Producto 7', 22.00)">Comprar</button>
+          
+        </div>
+        <div class="producto">
+            <img src="https://caterpillargt.com/cdn/shop/products/30070933_180x.jpg?v=1679623195" alt="Producto 2">
+            <h3>Producto 8</h3>
+            <p>Camisa sleve</p>
+            <p class="precio">$32.00</p>
+            <button onclick="agregarAlCarrito('Producto 8', 32.00)">Comprar</button>
+        </div>
+        -->
+    </section>
+     <!-- Carrito de compras -->
+     <div class="carrito">
+        <h2>Carrito de compras</h2>
+        <ul id="carrito-lista">
+            <!-- Los productos seleccionados se mostrarán aquí -->
+        </ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </div>
+    <footer id="pie">
+        <p>&copy; 2023 Tienda La Poderosa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
